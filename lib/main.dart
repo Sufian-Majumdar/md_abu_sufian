@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(const MyApp());
 }
-int age=24;
+int age=22;
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
