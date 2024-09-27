@@ -1,12 +1,37 @@
-import 'package:flutter/material.dart';
-import'assignment01.dart';
+//import 'package:flutter/material.dart';
+
 void main(){
-  Book bookOne = new Book('Islamic Psychology', 'Akbar Husain', 2006, 120);
+  Book bookOne = Book('Islamic Psychology', 'Akbar Husain', 2006, 120);
 
-  Book bookTwo = new Book('Think and Grow Rich','Nepoleon Hill',1937, 34);
+  Book bookTwo = Book('Think and Grow Rich','Nepoleon Hill',1937, 34);
 
-  Book bookThree = new Book('Ar Rahekul Makhtum','Allama Safiur Rahman',2006, 880);
-  bookOne.displayBook;
+  Book bookThree = Book('Ar Rahekul Makhtum','Allama Safiur Rahman',2006, 880);
+  bookOne.displayBook();
+  bookTwo.displayBook();
+  bookThree.displayBook();
+
 }
+class Book{
+  String? title;
+  String? author;
+  int? publicationYear;
+  int? pagesRead;
+  int? currentYear =2024;
+  Book(this.title, this.author, this.publicationYear, this.pagesRead);
+  //static int totalBook= 3;
+
+//void bookAge(int publicationYear){}
+  void displayBook(){
+    print("Book Title: $title");
+    print("Book Author: $author");
+    print("Publication Year : $publicationYear");
+    print("Pages Read: $pagesRead\n\n");
+
+  }
+
+}
+
+
+
 
 
