@@ -9,18 +9,18 @@ void main(){
   bookOne.displayBook();
   bookTwo.displayBook();
   bookThree.displayBook();
-
+  print('Total books:${Book.totalBook}');
+  //print(Book.bookAge);
 }
 class Book{
   String? title;
   String? author;
   int? publicationYear;
   int? pagesRead;
-  int? currentYear =2024;
+  int currentYear =2024;
   Book(this.title, this.author, this.publicationYear, this.pagesRead);
-  //static int totalBook= 3;
+  static int totalBook= 3;
 
-//void bookAge(int publicationYear){ }
   void displayBook(){
     print("Book Title: $title");
     print("Book Author: $author");
