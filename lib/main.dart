@@ -1,36 +1,23 @@
-//import 'package:flutter/material.dart';
-
-void main(){
-  Book bookOne = Book('Islamic Psychology', 'Akbar Husain', 2006, 120);
-
-  Book bookTwo = Book('Think and Grow Rich','Nepoleon Hill',1937, 34);
-
-  Book bookThree = Book('Ar Rahekul Makhtum','Allama Safiur Rahman',2006, 880);
-  bookOne.displayBook();
-  bookTwo.displayBook();
-  bookThree.displayBook();
-  print('Total books:${Book.totalBook}');
-}
-class Book{
-  String? title;
-  String? author;
-  int? publicationYear;
-  int? pagesRead;
-  int currentYear =2024;
-  Book(this.title, this.author, this.publicationYear, this.pagesRead);
-  static int totalBook= 3;
-
-  void displayBook(){
-    print("Book Title: $title");
-    print("Book Author: $author");
-    print("Publication Year : $publicationYear");
-    print("Pages Read: $pagesRead\n\n");
+class car{
+  String brand;
+  String model;
+  int year;
+  car(this.brand, this.model,this.year);
+  int carAge(){
+    int currentYear=
+        DateTime.now().year;
+    return currentYear - year;
 
   }
-
 }
 
-
+void main(){
+  car objCar = car('Toyota','Corolla',2015);
+  print('Brand:${objCar.brand}');
+  print('Model: ${objCar.model}');
+  print('Year:${objCar.year}');
+  print('Car Age:${objCar.carAge()}years');
+}
 
 
 
