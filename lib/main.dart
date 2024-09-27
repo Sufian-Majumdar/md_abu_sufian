@@ -10,7 +10,6 @@ void main(){
   bookTwo.displayBook();
   bookThree.displayBook();
   print('Total books:${Book.totalBook}');
-  //print(Book.bookAge);
 }
 class Book{
   String? title;
